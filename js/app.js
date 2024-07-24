@@ -15,6 +15,9 @@ var CELULAR_EMPRESA = "5521980194287"
 cardapio.eventos = {
   init: () => {
     cardapio.metodos.obterItensCardapio()
+    cardapio.metodos.carregarBotaoReserva()
+    cardapio.metodos.carregarBotaoLigar()
+    cardapio.metodos.btnWhatsappIcon()
   },
 };
 
@@ -526,6 +529,57 @@ finalizarPedido: () => {
 },
 
 
+  carregarBotaoReserva: () =>{
+
+    var texto = 'Olá gostaria de fazer uma *reserva*'
+
+    let encode = encodeURI(texto)
+    let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`
+
+    $("#btnReserva").attr('href', URL)
+
+  },
+
+  carregarBotaoLigar: () => {
+
+    $('#btnLigar').attr("href", `tel:${CELULAR_EMPRESA}`)
+
+  },
+
+  abrirDepoimento: (depoimento) => {
+
+    $("#depoimento-1").addClass('hidden')
+    $("#depoimento-2").addClass('hidden')
+    $("#depoimento-3").addClass('hidden')
+
+    $("#btnDepoimento-1").removeClass('active')
+    $("#btnDepoimento-2").removeClass('active')
+    $("#btnDepoimento-3").removeClass('active')
+
+    $("#depoimento-" + depoimento).removeClass('hidden')
+    $("#btnDepoimento-" + depoimento).addClass('active')
+
+  },
+
+
+  btnWhatsappIcon: () => {
+
+    var texto = ''
+    let encode = encodeURI(texto)
+    let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`
+
+    $("#btnWhatsIcon1").attr('href', URL)
+    $("#btnWhatsIcon2").attr('href', URL)
+
+  },
+
+
+
+
+
+
+
+
   mensagem: (texto, cor = 'red', tempo = 3500) => {
 
     let id = Math.floor(Date.now() * Math.random()).toString()
@@ -547,7 +601,7 @@ finalizarPedido: () => {
 
 cardapio.templates = {
   item: `
-    <div class="col-3 mb-5">
+    <div class="col-3 mb-5 animated fadeInUp">
         <div class="card card-item" id="\${id}">
          <div class="img-produto">
             <img

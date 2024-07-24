@@ -1,0 +1,74 @@
+
+
+
+
+/* TABLETS E CELULARES */
+@media (max-width: 767px) {
+
+    .no-mobile{
+        display: none!important;
+    }
+
+    .col-one {
+        padding-left: 35px!important;
+        padding-right: 35px!important;
+    }
+
+    .navbar-toggler-icon{
+        padding-top: 5px;
+    }
+
+    .navbar-collapse{
+        background-color: var(--color-secondary);
+        padding: 20px;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .navbar-collapse .btn-white{
+        margin-top: 20px;
+    }
+
+    .navbar-collapse .btn-icon{
+        padding-right: 20px;
+    }
+
+    .navbar-collapse .btn-icon span.icon{
+        display: none;
+    }
+
+    .banner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text-banner h1{
+        font-size: 40px;
+        
+    }
+
+    .text-banner p{
+        font-size: 18px;
+    }
+
+    .btn-yellow, .btn-white {
+        padding: 13px 23px;
+        font-size: 18px;
+    }
+
+    .btn-icon-left span.icon-left{
+        width: 43px;
+        height: 43px;
+        margin-left: -56px;
+    }
+
+    .btn-icon-left{
+        padding-left: 63px!important;
+
+    }
+
+    .title{
+        font-size: 30px;
+    }
+    
+}
