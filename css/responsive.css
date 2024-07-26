@@ -70,5 +70,83 @@
     .title{
         font-size: 30px;
     }
+
+    .servicos {
+        padding-bottom: 50px;
+    }
+
+    .cardapio{
+        padding-bottom: 50px;
+    }
     
+    .container-menu{
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        padding-bottom: 15px;
+    }
+
+    .img-produto {
+        position: absolute;
+        left: 15px;
+    }
+
+    .card-item{
+        height: 110px;
+        padding-left: 110px;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .card-item .img-produto img{
+        width: 80px;
+    }
+
+    .title-produto{
+        margin-top: 0px!important;
+        height: 30px!important;
+        width: 100%;
+        text-align: left!important;
+    }
+
+    .price-produto{
+        margin-bottom: 0px!important;
+        margin-top: 0px!important;
+        font-size: 22px!important;
+    }
+
+    .card-item .add-carrinho {
+        margin-top: 5px;
+    }
+
+    #itensCardapio .mb-5{
+        margin-bottom: 15px!important;
+    }
+
+    .depoimentos {
+        padding-bottom: 50px;
+    }
+
+    .reserva{
+        padding-bottom: 50px;
+    }
+
+    .card-secondary{
+        padding: 45px;
+        border-radius: 50px;
+    }
+
+    .container-logo-footer{
+        justify-content: center;
+    }
+
+    .container-texto-footer p {
+        text-align: center;
+    }
+
+    .container-redes-footer{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
 }
